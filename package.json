@@ -1,0 +1,25 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hopverkefni 1 med valda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vefforritun/vef1-2018-h1.git"
+  },
+  "author": "Breki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vefforritun/vef1-2018-h1/issues"
+  },
+  "homepage": "https://github.com/vefforritun/vef1-2018-h1#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,0 +1,16 @@
+// TODO stillingar hér
+.box {
+  background-color: red;
+  @media(max-width:1000px) {
+    background-color: pink;
+  }
+
+  &__text {
+    font-size: 60px;
+  }
+
+  &__contentbox {
+    font-size: 100px;
+  }
+
+}

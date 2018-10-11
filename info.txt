@@ -1,0 +1,14 @@
+npm init
+
+control + shift + o fyrir terminator
+
+npm run sass-watch
+npm run browser-sync
+
+ssh fyrir git
+git pull alltaf
+
+git add https://github.com/Ikreb1/h1.git
+git commit https://github.com/Ikreb1/h1.git
+git pull https://github.com/Ikreb1/h1.git
+git push https://github.com/Ikreb1/h1.git
