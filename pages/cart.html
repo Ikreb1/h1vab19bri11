@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið - vörur</title>
+
+  <link rel="stylesheet" href="../grid.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="cart">
+      <div class="cart__title">
+        <h2>Vörur í körfu</h2>
+      </div>
+      <div class="items">
+        <div class="items__row">
+          <div class="items__col">
+            <section class="item">
+              <div class="item__content">
+                <img class="item__image" src="../img/watch.jpg" />
+                <div class="item__text">
+                  <h2 class="item__title">Ótrúlegt úr</h2>
+                  <p class="item__description">
+                    Hvað er klukkan? Þetta úr mun svara því hvenær sem er.
+                  </p>
+                </div>
+                <div class="item__price">
+                  99.900 kr.-
+                </div>
+                <div class="item__meta">
+                  <label class="item__label">
+                    Fjöldi:
+                    <input type="number" class="item_input" value="1" />
+                  </label>
+                  <button class="item__button">Uppfæra</button>
+                  <button class="item__button">Eyða úr körfu</button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="items__col">
+            <section class="item">
+              <div class="item__content">
+                <img class="item__image" src="../img/headphones.jpg" />
+                <div class="item__text">
+                  <h2 class="item__title">Hágæða heyrnatól</h2>
+                  <p class="item__description">
+                    Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnatólum. Höfum við minnst á að þau eru hágæða?
+                  </p>
+                </div>
+                <div class="item__price">
+                  39.999 kr.-
+                </div>
+                <div class="item__meta">
+                  <label class="item__label">
+                    Fjöldi:
+                    <input type="number" class="item_input" value="1" />
+                  </label>
+                  <button class="item__button">Uppfæra</button>
+                  <button class="item__button">Eyða úr körfu</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <div class="user__info">
+          <div class="user__address">
+            <h2>Sendingarupplýsingar</h2>
+            <label class="user__label">
+              Nafn:
+              <input type="text" class="user__input" />
+            </label>
+            <label class="user__label">
+              Heimilisfang:
+              <input type="text" class="user__input" />
+            </label>
+            <label class="user__label">
+              Póstnúmer:
+              <input class="user__input" value="Velja póstnúmer" />
+            </label>
+          </div>
+          <div class="user__payment">
+            <h2>Greiðsuupplýsingar</h2>
+            <label class="user__label">
+              Kortanúmer:
+              <input type="text" class="user__input" />
+            </label>
+            <label class="user__label">
+              Korthafi:
+              <input type="text" class="user__input" />
+            </label>
+            <label class="user__label">
+              Gildistími:
+              <label class="user__date">
+                Mán
+                <input type="month" value="01" />
+              </label>
+              <label class="user__date">
+                Ár
+                <input type="number"  value="2018"/>
+              </label>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="cart__button">Kaupa</button>
+    </div>
+  </main>
+</body>
+
+</html>
