@@ -1,16 +1,62 @@
 // TODO stillingar hér
-.box {
-  background-color: red;
-  @media(max-width:1000px) {
-    background-color: pink;
+@import "config";
+footer {
+  margin: 0 auto;
+  background-color: $color-6;
+
+  @media (max-width: $max-width -1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+}
+
+.footer {
+  &__cards {
+    padding: 10px;
+    @include row;
+    flex-wrap: wrap;
   }
 
-  &__text {
-    font-size: 60px;
+  &__card {
+    font: $font-heading;
+
+    @include columns(6);
+
+    @media (min-width: 500px) {
+      @include columns(6);
+    }
+
+    @media (min-width: 900px) {
+      @include columns(3);
+    }
+
+    @media (min-width: 1400px) {
+      @include columns(3);
+    }
   }
 
-  &__contentbox {
-    font-size: 100px;
+  &__title {
+    margin: 20px 0px;
+    font-size: $font-size-6;
   }
 
+  &__list {
+    list-style: none;
+  }
+
+  &__listitem {
+    margin: 5px 0px;
+  }
+
+  &__trademark {
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+}
+
+.footer__listitem > a {
+  color: $color-2;
+  text-decoration: none;
 }
