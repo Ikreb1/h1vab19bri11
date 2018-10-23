@@ -10,11 +10,20 @@
   }
 
   &__row {
+    padding: 10px;
+    @media (min-width: 1200px) { //why not working?
+      padding: 0px;
+    }
     @include row;
     flex-wrap: wrap;
+
   }
 
   &__col {
+    padding: 10px;
+    @media (min-width: 1200px) {
+      padding: 0px;
+    }
     @include columns(12);
 
     @media (min-width: 500px) {
@@ -25,7 +34,9 @@
       @include columns(4);
     }
 
-
+    @media (min-width: 1400px) {
+      @include columns(4);
+    }
   }
 }
 
@@ -33,5 +44,202 @@
 
   &__image {
     width: 100%;
+    margin: 10px 0px;
   }
+
+  &__text {
+    margin: 10px 0em;
+  }
+
+  &__title {
+    font-size: $font-size-8;
+    margin: 10px 0em;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-7;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-7;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-7;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-6;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-4;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-4;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-4;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: $font-size-7;
+    margin-bottom: 10px;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-6;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-6;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-6;
+    }
+  }
+
+  &__meta {
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
+  }
+
+  &__labelText {
+    //flex: 0 1 100%;
+  }
+
+  &__label {
+    font-size: $font-size-6;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-3;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-3;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-3;
+    }
+  }
+
+  &__input {
+    //flex: 1 0 50%;
+    font-size: $font-size-6;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: $color-2;
+    width: 58%;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-2;
+      width: 54%;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-2;
+      width: 65%;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-2;
+    }
+  }
+
+  &__button {
+    //flex: 1 0 50%;
+    font-size: $font-size-6;
+
+    @media (min-width: 500px) {
+      font-size: $font-size-4;
+      width: 44%;
+      padding: 10px 10px 10px 40px;
+    }
+
+    @media (min-width: 900px) {
+      font-size: $font-size-2;
+      width: 35%
+    }
+
+    @media (min-width: 1400px) {
+      font-size: $font-size-2;
+      width: 35%
+    }
+
+    width: 40%;
+    background-color: $color-2;
+    background-image: url(../img/cart.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left center;
+    padding: 10px 10px 5px 40px;
+    border-radius: 4px;
+
+  }
+}
+
+footer {
+  margin: 0 auto;
+  background-color: $color-6;
+
+  @media (max-width: $max-width -1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+}
+
+.footer {
+  &__cards {
+    padding: 10px;
+    @include row;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    font: $font-heading;
+
+    @include columns(6);
+
+    @media (min-width: 500px) {
+      @include columns(6);
+    }
+
+    @media (min-width: 900px) {
+      @include columns(3);
+    }
+
+    @media (min-width: 1400px) {
+      @include columns(3);
+    }
+  }
+
+  &__title {
+    margin: 20px 0px;
+    font-size: $font-size-6;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__listitem {
+    margin: 5px 0px;
+  }
+
+  &__trademark {
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+}
+
+.footer__listitem > a {
+  color: $color-2;
+  text-decoration: none;
 }
