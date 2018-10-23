@@ -6,15 +6,15 @@
     font-size: $font-size-5;
 
     @media (min-width: 500px) {
-      font-size: $font-size-7;
+      font-size: $font-size-5;
     }
 
     @media (min-width: 900px) {
-      font-size: $font-size-7;
+      font-size: $font-size-5;
     }
 
     @media (min-width: 1400px) {
-      font-size: $font-size-7;
+      font-size: $font-size-5;
     }
   }
 }
@@ -32,13 +32,14 @@
     padding: 10px;
     @include row;
     flex-wrap: wrap;
+
   }
 
   &__col {
     @include columns(12);
 
     @media (min-width: 500px) {
-      @include columns(6);
+      @include columns(12);
     }
 
     @media (min-width: 900px) {
@@ -51,6 +52,10 @@
 
   &__image {
     width:100%;
+
+    @media (min-width: 500px) {
+      width: 33%;
+    }
   }
 
   &__title {
@@ -112,15 +117,15 @@
   &__label {
     font-size: $font-size-4;
     @media (min-width: 500px) {
-      font-size: $font-size-3;
+      font-size: $font-size-4;
     }
 
     @media (min-width: 900px) {
-      font-size: $font-size-3;
+      font-size: $font-size-4;
     }
 
     @media (min-width: 1400px) {
-      font-size: $font-size-3;
+      font-size: $font-size-4;
     }
   }
 
@@ -134,7 +139,6 @@
 
     @media (min-width: 500px) {
       font-size: $font-size-2;
-      width: 54%;
     }
 
     @media (min-width: 900px) {
@@ -153,18 +157,15 @@
 
     @media (min-width: 500px) {
       font-size: $font-size-4;
-      width: 44%;
       padding: 10px 10px 10px 40px;
     }
 
     @media (min-width: 900px) {
       font-size: $font-size-2;
-      width: 35%
     }
 
     @media (min-width: 1400px) {
       font-size: $font-size-2;
-      width: 35%
     }
 
     width: max-content;
