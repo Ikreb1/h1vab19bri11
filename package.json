@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/vefforritun/vef1-2018-h1#readme",
   "dependencies": {
-    "browser-sync": "^2.26.0",
-    "node-sass": "^4.9.3"
+    "browser-sync": "^2.26.3",
+    "node-sass": "^4.9.4",
+    "sass": "^1.14.3",
+    "sass-watch": "^0.1.0"
   }
 }

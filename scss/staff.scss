@@ -1,70 +1,85 @@
-// TODO stillingar hér
+
 @import "config";
+
 @media (max-width: $max-width -1) {
   padding-right: $gutter;
   padding-left: $gutter;
 }
-.button1 {
-  @include columns(9);
-  background-color: $color-6; 
-  border-radius: 5px;
-  border-width: 0px;
-  color: $color-1;
-  padding: 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.p3,.p2{
-  margin-bottom: 20px;
-}
-.p2{
-  font-size: 21px;
 
-}
-.p3{
-  font-style: $font-main;
-  font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-.grid1{
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-  
-}
 
-.image{
-  width: 100% ;
-}
-@media(max-width: 500px){
-  .grid1__row {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  .grid1__col {
+.main{
+    max-width: $max-width;
     
-   margin-bottom:20px;
-   @include columns(12);
-   
-     
+    
+}
+
+.grid{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    
+  }
+  
+  .image{
+    width: 100% ;
+  }
+
+  .grid__row {
+    
+    padding: 10px;
+    @include row;
+    flex-wrap: wrap;
+    
+  
+  }
+  
+  .grid__col {
+    
+    margin-bottom:20px;
+    perspective: 1000px;
+    @media(min-width: 500px){
+      @include columns(12);
     }
-  
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+   
+  }
+    
+  .grid__col:hover .card{
+   transform: rotateY( 180deg );
 }
-.grid1__row2 {
-  flex-direction: column-reverse;
- }
 
-
-  
-
+.card {
+        
+  transition: $transition;
+  transform-style: preserve-3d;
+         
 }
 
-p{
+.card__front, .card__back {
+  backface-visibility: hidden;
+        
+}
+
+.card__back {
   
-  font-size: 21;
+
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  transform: rotateY( -180deg );
+         
+          
+}
+
+.p1,.p5{
+  text-align: center;
+}
+
+.p1{
+  font-weight: bold;
 }
 
 
@@ -128,3 +143,9 @@ footer {
   color: $color-2;
   text-decoration: none;
 }
+
+
+
+
+
+
