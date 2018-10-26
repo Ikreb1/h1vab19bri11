@@ -62,6 +62,10 @@ footer {
     font-weight: normal;
   }
 
+  &__listitem>a:hover {
+    transition: $transition;
+    color: $color-1;
+  }
 }
 
 .footer__listitem > a {
