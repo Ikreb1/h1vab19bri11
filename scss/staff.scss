@@ -5,32 +5,34 @@
 
 .main{
     max-width: $max-width;
-    
-    
+    margin: 0 auto;
+
 }
 
 .grid{
+    max-width: $max-width;
+    margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
-    
+
   }
-  
+
   .image{
     width: 100% ;
   }
 
   .grid__row {
-    
+
     padding: 10px;
     @include row;
     flex-wrap: wrap;
-    
-  
+
+
   }
-  
+
   .grid__col {
-    
+
     margin-bottom:20px;
     perspective: 1000px;
     @media(min-width: 500px){
@@ -39,35 +41,35 @@
     @media (min-width: 800px) {
       @include columns(6);
     }
-   
+
   }
-    
+
   .grid__col:hover .card{
    transform: rotateY( 180deg );
 }
 
 .card {
-        
+
   transition: $transition;
   transform-style: preserve-3d;
-         
+
 }
 
 .card__front, .card__back {
   backface-visibility: hidden;
-        
+
 }
 
 .card__back {
-  
+
 
   position:absolute;
   left: 20px;
   right: 20px;
   top: 50%;
   transform: rotateY( -180deg );
-         
-          
+
+
 }
 
 .p1,.p5{
@@ -139,9 +141,3 @@ footer {
   color: $color-2;
   text-decoration: none;
 }
-
-
-
-
-
-
