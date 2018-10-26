@@ -181,6 +181,10 @@
     border-radius: 4px;
 
   }
+  &__button:hover {
+    transition: $transition;
+    background-color: $color-6;
+  }
 }
 
 footer {
@@ -195,9 +199,14 @@ footer {
 
 .footer {
   &__cards {
+    max-width: $max-width;
     padding: 10px;
-    @include row;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (max-width: $max-width -1) {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+
   }
 
   &__card {
@@ -235,6 +244,10 @@ footer {
     padding: 20px 0px;
     text-align: center;
     font-weight: normal;
+  }
+  &__listitem>a:hover {
+    transition: $transition;
+    color: $color-1;
   }
 
 }

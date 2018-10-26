@@ -1,3 +1,15 @@
+# h1vab19bri11
+Til að keyra þarf að fara á vefslóðina:
+https://notendur.hi.is/~bri11/vefforritun/hopverkefni1/
+
+erum með möppur fyrir scss in fyirr hverja síðu og svo er ein main scss file sem allar hinar skrifa í automatically með scss-sync .
+index.html er í aðalmöppunni og restin af htmlunum eru í pages möppunni.
+
+Breki Ingibjargarson, bri11@hi.is gerði Footer, cart og products.
+Valdimar Björnsson,   vab19@hi.is gerði header, index og staff.
+
+
+
 
 # Hópverkefni 1
 
@@ -115,4 +127,3 @@ Myndir frá:
 ---
 
 > Útgáfa 0.1
-# h1vab19bri11
