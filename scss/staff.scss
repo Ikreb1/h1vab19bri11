@@ -1,0 +1,147 @@
+
+@import "config";
+
+
+
+.main{
+    max-width: $max-width;
+    
+    
+}
+
+.grid{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    
+  }
+  
+  .image{
+    width: 100% ;
+  }
+
+  .grid__row {
+    
+    padding: 10px;
+    @include row;
+    flex-wrap: wrap;
+    
+  
+  }
+  
+  .grid__col {
+    
+    margin-bottom:20px;
+    perspective: 1000px;
+    @media(min-width: 500px){
+      @include columns(12);
+    }
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+   
+  }
+    
+  .grid__col:hover .card{
+   transform: rotateY( 180deg );
+}
+
+.card {
+        
+  transition: $transition;
+  transform-style: preserve-3d;
+         
+}
+
+.card__front, .card__back {
+  backface-visibility: hidden;
+        
+}
+
+.card__back {
+  
+
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  transform: rotateY( -180deg );
+         
+          
+}
+
+.p1,.p5{
+  text-align: center;
+}
+
+.p1{
+  font-weight: bold;
+}
+
+
+footer {
+  margin: 0 auto;
+  background-color: $color-6;
+
+  @media (max-width: $max-width -1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+}
+
+.footer {
+  &__cards {
+    padding: 10px;
+    @include row;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    font: $font-heading;
+
+    @include columns(6);
+
+    @media (min-width: 500px) {
+      @include columns(6);
+    }
+
+    @media (min-width: 900px) {
+      @include columns(3);
+    }
+
+    @media (min-width: 1400px) {
+      @include columns(3);
+    }
+  }
+
+  &__title {
+    margin: 20px 0px;
+    font-size: $font-size-6;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__listitem {
+    margin: 5px 0px;
+  }
+
+  &__trademark {
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+}
+
+.footer__listitem > a {
+  color: $color-2;
+  text-decoration: none;
+}
+
+
+
+
+
+
