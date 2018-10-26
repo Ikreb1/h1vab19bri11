@@ -1,11 +1,41 @@
 // TODO stillingar hér
 @import "config";
-@media (max-width: $max-width -1) {
-  padding-right: $gutter;
-  padding-left: $gutter;
+.header {
+  padding: 30px;
+  text-align: center;
+  background:#afb281;
+  color: #000000;
+  font-size: 30px;
+}
+.image2:before {
+  content:url(img/cart.svg);
+  display: block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 140px;
+  right: 120px;
+}
+a:hover {
+  transition: $transition;
+  color: #cee8ff;
+}
+.karfan{
+  color: inherit;
+  text-decoration: none;
+  font-size: 10px;
+  position: absolute;
+  top: 140px;
+  right: 25px;
+}
+a:link{
+  color: inherit;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
 }
 .button1 {
-  @include columns(9);
+  width: 66%;
   background-color: $color-6; 
   border-radius: 5px;
   border-width: 0px;
@@ -31,12 +61,15 @@
 }
 .grid1{
   display: flex;
-  flex-wrap:wrap;
   flex-direction: column;
+  @media (max-width: 1200px -1) {
+    
+      padding-right: 20px;
+      padding-left: 20px; } 
   
 }
 
-.image{
+.image1{
   width: 100% ;
 }
 @media(max-width: 500px){
@@ -44,26 +77,63 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-  .grid1__col {
+  }
+  .grid1__column{
     
-   margin-bottom:20px;
-   @include columns(12);
+    margin-bottom:20px;
+    @include columns(12);
    
      
     }
+  .grid1__row2 {
+    flex-direction: column-reverse;
+    
+  
+  }
+  
   
 }
-.grid1__row2 {
-  flex-direction: column-reverse;
- }
-
-
+@media(min-width: 800px){
+  .grid1__row {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
   
+  .grid1__column{
+   max-width: 1200px;
+   margin-bottom: 20px;
+   @include columns(6);
+   
+     
+    }
+
+    
+  
+}
+
+
+
+@media(min-width: 1500px){
+  .grid1__column{
+    max-width: 1200px;
+    margin-bottom: 20px;
+    @include columns(6);
+    
+    
+      
+     }
+  .texti{
+    margin-top: 200px;
+  }
+  .p1,.p5{
+    font-size: 28;
+  }
 
 }
 
-p{
-  
+.p1,.p5{
   font-size: 21;
 }
 
