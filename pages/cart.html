@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vöruhúsið - vörur</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Oswald:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="../grid.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -20,8 +21,8 @@
         <div class="items__row">
           <div class="items__col">
             <section class="item">
+              <img class="item__image" src="../img/watch.jpg" />
               <div class="item__content">
-                <img class="item__image" src="../img/watch.jpg" />
                 <div class="item__text">
                   <h2 class="item__title">Ótrúlegt úr</h2>
                   <p class="item__description">
@@ -34,7 +35,7 @@
                 <div class="item__meta">
                   <label class="item__label">
                     Fjöldi:
-                    <input type="number" class="item_input" value="1" />
+                    <input type="number" class="item__input" value="1" />
                   </label>
                   <button class="item__button">Uppfæra</button>
                   <button class="item__button">Eyða úr körfu</button>
@@ -44,8 +45,8 @@
           </div>
           <div class="items__col">
             <section class="item">
+              <img class="item__image" src="../img/headphones.jpg" />
               <div class="item__content">
-                <img class="item__image" src="../img/headphones.jpg" />
                 <div class="item__text">
                   <h2 class="item__title">Hágæða heyrnatól</h2>
                   <p class="item__description">
@@ -58,7 +59,7 @@
                 <div class="item__meta">
                   <label class="item__label">
                     Fjöldi:
-                    <input type="number" class="item_input" value="2" />
+                    <input type="number" class="item__input" value="2" />
                   </label>
                   <button class="item__button">Uppfæra</button>
                   <button class="item__button">Eyða úr körfu</button>
@@ -70,227 +71,241 @@
       </div>
       <div class="user">
         <div class="user__info">
-          <div class="user__address">
-            <div class="user__addresstitle">
+          <div class="user__infos">
+            <div class="user__title">
               <h2>Sendingarupplýsingar</h2>
             </div>
-            <label class="user__label">
-              Nafn:
-              <input type="text" class="user__input" />
-            </label>
-            <label class="user__label">
-              Heimilisfang:
-              <input type="text" class="user__input" />
-            </label>
-            <label class="user__label">
-              Póstnúmer:
-              <input class="user__input"/ list="postnumer" value="-Velja póstnúmer-">
-              <datalist id="postnumer">
-                <option value"101 Reykjavík">
-                <option value"103 Reykjavík">
-                <option value"104 Reykjavík">
-                <option value"105 Reykjavík">
-                <option value"107 Reykjavík">
-                <option value"108 Reykjavík">
-                <option value"109 Reykjavík">
-                <option value"110 Reykjavík">
-                <option value"111 Reykjavík">
-                <option value"112 Reykjavík">
-                <option value"113 Reykjavík">
-                <option value"116 Reykjavík">
-                <option value"121 Reykjavík">
-                <option value"123 Reykjavík">
-                <option value"124 Reykjavík">
-                <option value"125 Reykjavík">
-                <option value"127 Reykjavík">
-                <option value"128 Reykjavík">
-                <option value"129 Reykjavík">
-                <option value"130 Reykjavík">
-                <option value"132 Reykjavík">
-                <option value"162 Reykjavík - Dreifbýli">
-                <option value"170 Seltjarnarnesi">
-                <option value"172 Seltjarnarnesi">
-                <option value"190 Vogum">
-                <option value"191 Vogum">
-                <option value"200 Kópavogi">
-                <option value"201 Kópavogi">
-                <option value"202 Kópavogi">
-                <option value"203 Kópavogi">
-                <option value"210 Garðabæ">
-                <option value"212 Garðabæ">
-                <option value"220 Hafnarfirði">
-                <option value"221 Hafnarfirði">
-                <option value"222 Hafnarfirði">
-                <option value"225 Garðabær">
-                <option value"230 Reykjanesbæ">
-                <option value"232 Reykjanesbæ">
-                <option value"233 Reykjanesbæ">
-                <option value"235 Keflavíkurflugvöllur">
-                <option value"240 Grindavík">
-                <option value"241 Grindavík">
-                <option value"245 Sandgerði">
-                <option value"246 Sandgerði">
-                <option value"250 Garði">
-                <option value"251 Garði">
-                <option value"260 Reykjanesbæ">
-                <option value"262 Reykjanesbæ">
-                <option value"270 Mosfellsbæ">
-                <option value"271 Mosfellsbæ">
-                <option value"276 Mosfellsbæ">
-                <option value"300 Akranesi">
-                <option value"301 Akranesi">
-                <option value"302 Akranesi">
-                <option value"310 Borgarnesi">
-                <option value"311 Borgarnesi">
-                <option value"320 Reykholt í Borgarfirði">
-                <option value"340 Stykkishólmi">
-                <option value"341 Stykkishólmi">
-                <option value"345 Flatey á Breiðafirði">
-                <option value"350 Grundarfirði">
-                <option value"351 Grundarfirði">
-                <option value"355 Ólafsvík">
-                <option value"356 Snæfellsbæ">
-                <option value"360 Hellissandi">
-                <option value"370 Búðardal">
-                <option value"371 Búðardal">
-                <option value"380 Reykhólahreppi">
-                <option value"381 Reykhólahreppi">
-                <option value"400 Ísafirði">
-                <option value"401 Ísafirði">
-                <option value"410 Hnífsdal">
-                <option value"415 Bolungarvík">
-                <option value"416 Bolungarvík">
-                <option value"420 Súðavík">
-                <option value"421 Súðavík">
-                <option value"425 Flateyri">
-                <option value"426 Flateyri">
-                <option value"430 Suðureyri">
-                <option value"431 Suðureyri">
-                <option value"450 Patreksfirði">
-                <option value"451 Patreksfirði">
-                <option value"460 Tálknafirði">
-                <option value"461 Tálknafirði">
-                <option value"465 Bíldudal">
-                <option value"466 Bíldudal">
-                <option value"470 Þingeyri">
-                <option value"471 Þingeyri">
-                <option value"500 Stað">
-                <option value"510 Hólmavík">
-                <option value"511 Hólmavík">
-                <option value"512 Hólmavík">
-                <option value"520 Drangsnesi">
-                <option value"524 Árneshreppi">
-                <option value"530 Hvammstanga">
-                <option value"531 Hvammstanga">
-                <option value"540 Blönduósi">
-                <option value"541 Blönduósi">
-                <option value"545 Skagaströnd">
-                <option value"546 Skagaströnd">
-                <option value"550 Sauðárkróki">
-                <option value"551 Sauðárkróki">
-                <option value"560 Varmahlíð">
-                <option value"561 Varmahlíð">
-                <option value"565 Hofsós">
-                <option value"566 Hofsós">
-                <option value"570 Fljótum">
-                <option value"580 Siglufirði">
-                <option value"581 Siglufirði">
-                <option value"600 Akureyri">">
-                <option value"601 Akureyri">
-                <option value"602 Akureyri">
-                <option value"603 Akureyri">
-                <option value"610 Grenivík">
-                <option value"611 Grímsey">
-                <option value"616 Grenivík">
-                <option value"620 Dalvík">
-                <option value"621 Dalvík">
-                <option value"625 Ólafsfirði">
-                <option value"626 Ólafsfirði">
-                <option value"630 Hrísey">
-                <option value"640 Húsavík">
-                <option value"641 Húsavík">
-                <option value"645 Fosshólli">
-                <option value"650 Laugum">
-                <option value"660 Mývatni">
-                <option value"670 Kópaskeri">
-                <option value"671 Kópaskeri">
-                <option value"675 Raufarhöfn">
-                <option value"676 Raufarhöfn">
-                <option value"680 Þórshöfn">
-                <option value"681 Þórshöfn">
-                <option value"685 Bakkafirði">
-                <option value"686 Bakkafirði">
-                <option value"690 Vopnafirði">
-                <option value"691 Vopnafirði">
-                <option value"700 Egilsstöðum">
-                <option value"701 Egilsstöðum">
-                <option value"710 Seyðisfirði">
-                <option value"711 Seyðisfirði">
-                <option value"715 Mjóafirði">
-                <option value"720 Borgarfirði (eystri)">
-                <option value"721 Borgarfirði (eystri)">
-                <option value"730 Reyðarfirði">
-                <option value"731 Reyðarfirði">
-                <option value"735 Eskifirði">
-                <option value"736 Eskifirði">
-                <option value"740 Neskaupstað">
-                <option value"741 Neskaupsstað">
-                <option value"750 Fáskrúðsfirði">
-                <option value"751 Fáskrúðsfirði">
-                <option value"755 Stöðvarfirði">
-                <option value"756 Stöðvarfirði">
-                <option value"760 Breiðdalsvík">
-                <option value"761 Breiðdalsvík">
-                <option value"765 Djúpavogi">
-                <option value"766 Djúpavogi">
-                <option value"780 Höfn í Hornafirði">
-                <option value"781 Höfn í Hornafirði">
-                <option value"785 Öræfum">
-                <option value"800 Selfossi">
-                <option value"801 Selfossi">
-                <option value"802 Selfossi">
-                <option value"810 Hveragerði">
-                <option value"815 Þorlákshöfn">
-                <option value"816 Ölfus">
-                <option value"820 Eyrarbakka">
-                <option value"825 Stokkseyri">
-                <option value"840 Laugarvatni">
-                <option value"845 Flúðum">
-                <option value"846 Flúðum">
-                <option value"850 Hellu">
-                <option value"851 Hellu">
-                <option value"860 Hvolsvelli">
-                <option value"861 Hvolsvelli">
-                <option value"870 Vík">
-                <option value"871 Vík">
-                <option value"880 Kirkjubæjarklaustri">
-                <option value"881 Kirkjubæjarklaustri">
-                <option value"900 Vestmannaeyjum">
-                <option value"902 Vestmannaeyjum">
-              </datalist>
-            </label>
+            <div class="user__labels">
+              <label class="user__label">
+                Nafn:
+                <div class="user__inputs">
+                  <input type="text" class="user__input" />
+                </div>
+              </label>
+              <label class="user__label">
+                Heimilisfang:
+                <div class="user__inputs">
+                  <input type="text" class="user__input" />
+                </div>
+              </label>
+              <label class="user__label">
+                Póstnúmer:
+                <div class="user__inputs">
+                  <input class="user__input"/ list="postnumer" value="-Velja póstnúmer-">
+                </div>
+                <datalist id="postnumer">
+                  <option value"101 Reykjavík">
+                  <option value"103 Reykjavík">
+                  <option value"104 Reykjavík">
+                  <option value"105 Reykjavík">
+                  <option value"107 Reykjavík">
+                  <option value"108 Reykjavík">
+                  <option value"109 Reykjavík">
+                  <option value"110 Reykjavík">
+                  <option value"111 Reykjavík">
+                  <option value"112 Reykjavík">
+                  <option value"113 Reykjavík">
+                  <option value"116 Reykjavík">
+                  <option value"121 Reykjavík">
+                  <option value"123 Reykjavík">
+                  <option value"124 Reykjavík">
+                  <option value"125 Reykjavík">
+                  <option value"127 Reykjavík">
+                  <option value"128 Reykjavík">
+                  <option value"129 Reykjavík">
+                  <option value"130 Reykjavík">
+                  <option value"132 Reykjavík">
+                  <option value"162 Reykjavík - Dreifbýli">
+                  <option value"170 Seltjarnarnesi">
+                  <option value"172 Seltjarnarnesi">
+                  <option value"190 Vogum">
+                  <option value"191 Vogum">
+                  <option value"200 Kópavogi">
+                  <option value"201 Kópavogi">
+                  <option value"202 Kópavogi">
+                  <option value"203 Kópavogi">
+                  <option value"210 Garðabæ">
+                  <option value"212 Garðabæ">
+                  <option value"220 Hafnarfirði">
+                  <option value"221 Hafnarfirði">
+                  <option value"222 Hafnarfirði">
+                  <option value"225 Garðabær">
+                  <option value"230 Reykjanesbæ">
+                  <option value"232 Reykjanesbæ">
+                  <option value"233 Reykjanesbæ">
+                  <option value"235 Keflavíkurflugvöllur">
+                  <option value"240 Grindavík">
+                  <option value"241 Grindavík">
+                  <option value"245 Sandgerði">
+                  <option value"246 Sandgerði">
+                  <option value"250 Garði">
+                  <option value"251 Garði">
+                  <option value"260 Reykjanesbæ">
+                  <option value"262 Reykjanesbæ">
+                  <option value"270 Mosfellsbæ">
+                  <option value"271 Mosfellsbæ">
+                  <option value"276 Mosfellsbæ">
+                  <option value"300 Akranesi">
+                  <option value"301 Akranesi">
+                  <option value"302 Akranesi">
+                  <option value"310 Borgarnesi">
+                  <option value"311 Borgarnesi">
+                  <option value"320 Reykholt í Borgarfirði">
+                  <option value"340 Stykkishólmi">
+                  <option value"341 Stykkishólmi">
+                  <option value"345 Flatey á Breiðafirði">
+                  <option value"350 Grundarfirði">
+                  <option value"351 Grundarfirði">
+                  <option value"355 Ólafsvík">
+                  <option value"356 Snæfellsbæ">
+                  <option value"360 Hellissandi">
+                  <option value"370 Búðardal">
+                  <option value"371 Búðardal">
+                  <option value"380 Reykhólahreppi">
+                  <option value"381 Reykhólahreppi">
+                  <option value"400 Ísafirði">
+                  <option value"401 Ísafirði">
+                  <option value"410 Hnífsdal">
+                  <option value"415 Bolungarvík">
+                  <option value"416 Bolungarvík">
+                  <option value"420 Súðavík">
+                  <option value"421 Súðavík">
+                  <option value"425 Flateyri">
+                  <option value"426 Flateyri">
+                  <option value"430 Suðureyri">
+                  <option value"431 Suðureyri">
+                  <option value"450 Patreksfirði">
+                  <option value"451 Patreksfirði">
+                  <option value"460 Tálknafirði">
+                  <option value"461 Tálknafirði">
+                  <option value"465 Bíldudal">
+                  <option value"466 Bíldudal">
+                  <option value"470 Þingeyri">
+                  <option value"471 Þingeyri">
+                  <option value"500 Stað">
+                  <option value"510 Hólmavík">
+                  <option value"511 Hólmavík">
+                  <option value"512 Hólmavík">
+                  <option value"520 Drangsnesi">
+                  <option value"524 Árneshreppi">
+                  <option value"530 Hvammstanga">
+                  <option value"531 Hvammstanga">
+                  <option value"540 Blönduósi">
+                  <option value"541 Blönduósi">
+                  <option value"545 Skagaströnd">
+                  <option value"546 Skagaströnd">
+                  <option value"550 Sauðárkróki">
+                  <option value"551 Sauðárkróki">
+                  <option value"560 Varmahlíð">
+                  <option value"561 Varmahlíð">
+                  <option value"565 Hofsós">
+                  <option value"566 Hofsós">
+                  <option value"570 Fljótum">
+                  <option value"580 Siglufirði">
+                  <option value"581 Siglufirði">
+                  <option value"600 Akureyri">">
+                  <option value"601 Akureyri">
+                  <option value"602 Akureyri">
+                  <option value"603 Akureyri">
+                  <option value"610 Grenivík">
+                  <option value"611 Grímsey">
+                  <option value"616 Grenivík">
+                  <option value"620 Dalvík">
+                  <option value"621 Dalvík">
+                  <option value"625 Ólafsfirði">
+                  <option value"626 Ólafsfirði">
+                  <option value"630 Hrísey">
+                  <option value"640 Húsavík">
+                  <option value"641 Húsavík">
+                  <option value"645 Fosshólli">
+                  <option value"650 Laugum">
+                  <option value"660 Mývatni">
+                  <option value"670 Kópaskeri">
+                  <option value"671 Kópaskeri">
+                  <option value"675 Raufarhöfn">
+                  <option value"676 Raufarhöfn">
+                  <option value"680 Þórshöfn">
+                  <option value"681 Þórshöfn">
+                  <option value"685 Bakkafirði">
+                  <option value"686 Bakkafirði">
+                  <option value"690 Vopnafirði">
+                  <option value"691 Vopnafirði">
+                  <option value"700 Egilsstöðum">
+                  <option value"701 Egilsstöðum">
+                  <option value"710 Seyðisfirði">
+                  <option value"711 Seyðisfirði">
+                  <option value"715 Mjóafirði">
+                  <option value"720 Borgarfirði (eystri)">
+                  <option value"721 Borgarfirði (eystri)">
+                  <option value"730 Reyðarfirði">
+                  <option value"731 Reyðarfirði">
+                  <option value"735 Eskifirði">
+                  <option value"736 Eskifirði">
+                  <option value"740 Neskaupstað">
+                  <option value"741 Neskaupsstað">
+                  <option value"750 Fáskrúðsfirði">
+                  <option value"751 Fáskrúðsfirði">
+                  <option value"755 Stöðvarfirði">
+                  <option value"756 Stöðvarfirði">
+                  <option value"760 Breiðdalsvík">
+                  <option value"761 Breiðdalsvík">
+                  <option value"765 Djúpavogi">
+                  <option value"766 Djúpavogi">
+                  <option value"780 Höfn í Hornafirði">
+                  <option value"781 Höfn í Hornafirði">
+                  <option value"785 Öræfum">
+                  <option value"800 Selfossi">
+                  <option value"801 Selfossi">
+                  <option value"802 Selfossi">
+                  <option value"810 Hveragerði">
+                  <option value"815 Þorlákshöfn">
+                  <option value"816 Ölfus">
+                  <option value"820 Eyrarbakka">
+                  <option value"825 Stokkseyri">
+                  <option value"840 Laugarvatni">
+                  <option value"845 Flúðum">
+                  <option value"846 Flúðum">
+                  <option value"850 Hellu">
+                  <option value"851 Hellu">
+                  <option value"860 Hvolsvelli">
+                  <option value"861 Hvolsvelli">
+                  <option value"870 Vík">
+                  <option value"871 Vík">
+                  <option value"880 Kirkjubæjarklaustri">
+                  <option value"881 Kirkjubæjarklaustri">
+                  <option value"900 Vestmannaeyjum">
+                  <option value"902 Vestmannaeyjum">
+                </datalist>
+              </label>
+            </div>
           </div>
-          <div class="user__payment">
-            <h2>Greiðsuupplýsingar</h2>
-            <label class="user__label">
-              Kortanúmer:
-              <input type="text" class="user__input" />
-            </label>
-            <label class="user__label">
-              Korthafi:
-              <input type="text" class="user__input" />
-            </label>
-            <label class="user__label">
-              Gildistími:
-              <label class="user__date">
-                Mán
-                <input type="month" value="01" />
+          <div class="user__infos">
+            <div class="user__title">
+              <h2>Greiðsuupplýsingar</h2>
+            </div>
+            <div class="user__labels">
+              <label class="user__label">
+                Kortanúmer:
+                <div class="user__inputs">
+                  <input type="text" class="user__input" />
+                </div>
               </label>
-              <label class="user__date">
-                Ár
-                <input type="number"  value="2018"/>
+              <label class="user__label">
+                Korthafi:
+                <div class="user__inputs">
+                  <input type="text" class="user__input" />
+                </div>
               </label>
-            </label>
+              <label class="user__label">
+                Gildistími:
+                <label class="user__inputs">
+                  Mán
+                  <input type="number" name="quantity" min="1" max="12" value="01" class="user__date">
+                  Ár
+                  <input type="number"  value="2018" class="user__date"/>
+                </label>
+              </label>
+            </div>
           </div>
         </div>
       </div>
