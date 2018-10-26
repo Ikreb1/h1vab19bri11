@@ -181,6 +181,10 @@
     border-radius: 4px;
 
   }
+  &__button:hover {
+    transition: $transition;
+    background-color: $color-6;
+  }
 }
 
 footer {
@@ -240,6 +244,10 @@ footer {
     padding: 20px 0px;
     text-align: center;
     font-weight: normal;
+  }
+  &__listitem>a:hover {
+    transition: $transition;
+    color: $color-1;
   }
 
 }
